@@ -1,0 +1,9 @@
+/* App component styles */
+
+/* Mobile fixed buttons - add padding to footer on mobile */
+@media (max-width: 767px) {
+  app-footer {
+    padding-bottom: 5rem; /* Space for fixed buttons */
+  }
+}
+

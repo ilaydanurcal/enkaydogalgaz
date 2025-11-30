@@ -1,0 +1,57 @@
+<section class="bg-primary text-white py-12 relative overflow-hidden">
+  <div class="absolute inset-0 opacity-10">
+    <img src="/residential-complex-water-system.jpg" alt="Background" class="w-full h-full object-cover" />
+  </div>
+  <div class="relative max-w-6xl mx-auto px-4">
+    <h1 class="text-4xl font-bold mb-4">Ankara'da Hizmetler</h1>
+    <p class="text-lg text-white/80">Ankara'nın tüm bölgelerine doğalgaz, kombi ve tesisat hizmetleri sunuyoruz</p>
+  </div>
+</section>
+
+<section class="py-16">
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="mb-12">
+      <h2 class="text-3xl font-bold mb-4">Hizmet Verdiğimiz Bölgeler</h2>
+      <p class="text-lg text-muted-foreground mb-8">
+        Ankara'nın 11 ilçesine profesyonel doğalgaz ve tesisat hizmetleri veriyoruz. Her bölgede deneyimli
+        teknisyenlerimiz 7/24 acil destek sunmaktadırlar.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <a *ngFor="let district of districts; let i = index" [routerLink]="['/ankara', district.slug]" class="block">
+        <div class="bg-card border border-border rounded-lg overflow-hidden hover:shadow-lg hover:border-primary transition-all cursor-pointer h-full">
+          <div class="relative h-40 overflow-hidden">
+            <img [src]="getDistrictImage(i)" [alt]="district.name" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
+          </div>
+          <div class="p-6">
+            <div class="flex items-start justify-between mb-4">
+              <h3 class="text-xl font-bold text-foreground">{{ district.name }}</h3>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-primary flex-shrink-0">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+            </div>
+            <p class="text-sm text-muted-foreground mb-4">Nüfus: {{ district.population }}</p>
+            <p class="text-sm text-muted-foreground">{{ district.name }}'da doğalgaz tesisatı, kombi, klima ve sıhhi tesisat hizmetleri</p>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="py-16 bg-secondary/10">
+  <div class="max-w-4xl mx-auto px-4 text-center">
+    <h2 class="text-3xl font-bold mb-4">Ankara'da Acil Hizmet</h2>
+    <p class="text-lg text-muted-foreground mb-8">7/24 bölgemize ulaşan acil servisimiz, herhangi bir saatte sizin hizmetinizde.</p>
+    <a href="tel:+905336417849" class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors font-semibold">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+        <circle cx="12" cy="10" r="3"></circle>
+      </svg>
+      Hemen Arayın
+    </a>
+  </div>
+</section>
+

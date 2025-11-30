@@ -1,0 +1,28 @@
+<section class="bg-primary text-white py-12">
+  <div class="max-w-[1600px] mx-auto px-6">
+    <h1 class="text-4xl font-bold mb-4">Tüm Hizmetlerimiz</h1>
+    <p class="text-lg text-white/80">Ankara'da güvenilir ve profesyonel hizmetler</p>
+  </div>
+</section>
+
+<section class="py-16">
+  <div class="max-w-[1600px] mx-auto px-6">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <a *ngFor="let service of services" [routerLink]="['/hizmetler', service.slug]" class="block">
+        <div class="bg-card border border-border p-7 rounded-lg hover:shadow-lg hover:border-primary transition-all cursor-pointer h-full">
+          <div class="inline-block p-3 bg-primary/10 rounded-lg mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-primary">
+              <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+            </svg>
+          </div>
+          <h3 class="font-bold text-xl mb-3">{{ service.title }}</h3>
+          <p class="text-muted-foreground text-base mb-5">{{ service.description }}</p>
+          <div class="flex flex-wrap gap-2">
+            <span *ngFor="let feature of service.features.slice(0, 2)" class="inline-block px-3 py-1.5 bg-primary/5 text-primary text-sm rounded">{{ feature }}</span>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+

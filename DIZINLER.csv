@@ -1,0 +1,51 @@
+Site Adı,URL,DA,Ücret,Kategori,Açıklama
+Google Business,https://business.google.com,100,Yok,Genel yerel rehber,Google Haritalar görünürlüğü için zorunlu kayıt
+Yandex Business,https://business.yandex.com,90,Yok,Genel yerel rehber,Yandex ve Rusça kullanıcılar için ek trafik
+Apple Maps,https://register.apple.com/placesonmaps,94,Yok,Genel yerel rehber,iOS kullanıcıları için harita görünürlüğü
+Bing Places,https://www.bingplaces.com,92,Yok,Genel yerel rehber,Bing arama ve Windows kullanıcıları
+AnkaraRehberi,https://ankararehberi.com,41,Yok,Ankara yerel rehberi,Ankara işletmeleri için detaylı profil
+TurkRehber,https://turkrehber.com,36,Yok,Genel rehber,Türkiye genelinde ücretsiz işletme listesi
+HizmetYeri,https://hizmetheryeri.com,32,Yok,Hizmet rehberi,Tesisat ve teknik hizmetler kategorisi
+Sarı Sayfalar,https://sarisayfalar.com,48,Var,Genel rehber,Premium paketle logo ve bağlantı kontrolü
+Yellow Pages TR,https://yellowpages.com.tr,56,Var,Genel rehber,Yüksek otorite ve kullanıcı güveni
+Neredekal,https://neredekal.com,63,Var,Ticari rehber,İşletme profili + yorumlar
+Tamirci Bul,https://tamircibul.com,34,Yok,Tamir/Tesisat,Teknik servisler için uygun kategori
+Evinustasi,https://evinustasi.com,38,Yok,Evin ustaları,Kombi ve tesisat hizmetleri için bölüm
+Ustabilir,https://ustabildin.com,35,Yok,Usta platformu,Hizmet bölgeleri ve fiyat teklifi
+HizmetTakip,https://hizmetheryeri.net,29,Yok,Hizmet platformu,Referans ve müşteri yorumları
+IsinUstasi,https://isinustasi.com,33,Var,Usta rehberi,Premium üyelikle öne çıkarma
+HizmetVermek,https://hizmetvermek.com,27,Yok,Hizmetçi rehberi,7/24 hizmet kategorisi
+TesisatRehberi,https://tesisatrehberi.com,31,Yok,Tesisat uzmanlığı,Doğalgaz ve sıhhi tesisat odaklı
+IsitmaSogutma.net,https://isitmasogutma.net,27,Yok,Isıtma/soğutma blog/referans,Uygulama örnekleri paylaşılabilir
+KlimaRehberi,https://klimarehberi.com,30,Yok,Klima rehberi,Klima montaj ve bakım kategorileri
+KombiServisi.org,https://kombiservisi.org,42,Yok,Kombi rehberi,Yetkili servis listeleri
+Ankara Sanayi Odası,https://www.aso.org.tr,72,Var,Oda rehberi,Üyelik haberlerinde firma tanıtımı
+Ankara Ticaret Odası,https://www.atonet.org.tr,74,Var,Oda rehberi,ATO üye rehberi ve duyurular
+Tobb Sanayi Veri,https://www.tobb.org.tr,80,Var,Ulusal ticaret,Üyelik firmaları tanıtımı
+Ostim Teknopark,https://www.ostimteknopark.com,53,Var,Teknopark rehberi,Teknoloji odaklı işletme listesi
+Teknokent Ankara,https://www.ankarateknokent.com,47,Var,Teknopark rehberi,Yenilikçi projeler duyuruları
+EnerjiPortali,https://enerjiportali.com,54,Yok,Enerji sektörü,Teknik içerikler ve firma profili
+InsaatDunyasi,https://insaatdunyasi.com,56,Var,İnşaat sektörü,Proje referansları yayınlar
+EmlakKulisi,https://www.emlakkulisi.com.tr,58,Var,Emlak/İnşaat,Tesisat ve ısıtma çözümleri haberleri
+MekanikTR,https://mekaniktr.com,39,Yok,Mekanik mühendislik,Makale ve firma tanıtımı
+MühendisHaber,https://muhendishaber.com,51,Var,Mühendislik,Uzman görüşü içerikleri
+ProjeBaz,https://projebaz.com,43,Yok,Proje rehberi,Proje dosyalarıyla backlink
+EnerjiVerimliligi.org,https://enerjiverimliligi.org,47,Yok,Enerji verimliliği,Case-study paylaşımı
+Isıtma360,https://isitma360.com,28,Yok,Isıtma haberleri,Ürün incelemesi yayınlar
+KlimaKulubu,https://klimakulubu.com,33,Yok,Klima topluluğu,Soru-cevap ve rehber içerikler
+TeknikForum,https://teknikforum.com,31,Yok,Forum,Uzman cevapları + imza linki
+E-ticaret Rehberi,https://eticaretrehberi.com,37,Yok,Ticaret rehberi,B2B tedarikçi bağlantıları
+UstamBul,https://ustambul.com,40,Var,Hizmet platformu,Yorumlarla güçlenen profil
+Isletme Rehberi,https://isletmerehberi.com,35,Yok,Genel işletme rehberi,Ankara bölgesi kategori mevcut
+RehberSektör,https://rehbersektor.com,38,Var,Sektörel rehber,Hizmet sayfasında CTA alanı
+SanayiRolu,https://sanayirole.com,32,Yok,Sanayi rehberi,B2B bağlantılar
+TeknikIsler,https://teknikisler.com,34,Yok,Teknik hizmetler,Uzman röportajları yayınlıyor
+UstaRehberi,https://ustarehberi.net,29,Yok,Usta rehberi,Kombi ve doğalgaz kategorisi
+AnkaraFirma,https://ankarafirma.com,33,Yok,Ankara işletmeleri,İlçe bazlı filtreler
+BasitHarita,https://basitharita.com,44,Yok,Harita rehberi,Konum bazlı arama
+HaritaRehberi,https://haritarehberi.com,30,Yok,Harita rehberi,Google Maps linki eklenebilir
+Yerlial,https://yerial.com,41,Var,Genel rehber,En üst sıralama için ücretli paket
+Eniyikombi,https://eniyikombi.com,38,Yok,Kombi incelemeleri,Uzman içerik karşılığı link
+TesisatForum,https://tesisatforum.com,26,Yok,Forum,Teknik tartışma alanı
+AnkaraEtkinlik,https://ankaraetkinlik.com,35,Yok,Etkinlik rehberi,Sponsorlu etkinliklerle görünürlük
+

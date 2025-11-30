@@ -1,0 +1,32 @@
+Anchor Metni,Tür,Hedef URL,Not
+"En-Kay Doğalgaz",Brand,https://enkaydogalgaz.com/,Kurumsal ana sayfa referansı
+"En-Kay Doğalgaz Ankara",Brand,https://enkaydogalgaz.com/,Yerel sinyali güçlendirir
+"En-Kay Doğalgaz Resmi Sitesi",Brand,https://enkaydogalgaz.com/,Marka güveni
+"En-Kay Doğalgaz Hizmetleri",Brand,https://enkaydogalgaz.com/hizmetler,Kapsamlı hizmet sayfası
+"En-Kay Doğalgaz İletişim",Brand,https://enkaydogalgaz.com/iletisim,Randevu CTA
+"En-Kay Doğalgaz Kombi Servisi",Brand,https://enkaydogalgaz.com/hizmetler/kombi-bakim,Alt hizmet odağı
+"En-Kay Doğalgaz Tesisat",Brand,https://enkaydogalgaz.com/hizmetler/dogalgaz-tesisat,Semantik uyum
+"En-Kay Doğalgaz Klima",Brand,https://enkaydogalgaz.com/hizmetler/klima,Klima hizmeti
+"En-Kay Doğalgaz Kaskat",Brand,https://enkaydogalgaz.com/hizmetler/kaskat-sistemleri,Kaskat sistem sayfası
+"En-Kay Doğalgaz Referansları",Brand,https://enkaydogalgaz.com/projeler,Proje güven sinyali
+"enkaydogalgaz.com",Brand,https://enkaydogalgaz.com/,Direkt marka domain
+"En-Kay Doğalgaz Whatsapp",Brand,https://wa.me/905336417849,Sıcak dönüşüm bağlantısı
+"https://enkaydogalgaz.com/",URL,https://enkaydogalgaz.com/,Çıplak URL
+"https://enkaydogalgaz.com/hizmetler",URL,https://enkaydogalgaz.com/hizmetler,Alt dizin URL
+"https://enkaydogalgaz.com/iletisim",URL,https://enkaydogalgaz.com/iletisim,İletişim sayfası
+"https://enkaydogalgaz.com/hizmetler/kombi-bakim",URL,https://enkaydogalgaz.com/hizmetler/kombi-bakim,Kombi bakım landing
+"https://enkaydogalgaz.com/hizmetler/dogalgaz-tesisat",URL,https://enkaydogalgaz.com/hizmetler/dogalgaz-tesisat,Doğalgaz tesisat landing
+"https://enkaydogalgaz.com/blog",URL,https://enkaydogalgaz.com/blog,Gelecek içerikler için
+"doğalgaz tesisat firması",Topical,https://enkaydogalgaz.com/hizmetler/dogalgaz-tesisat,Sektörel anahtar
+"kombi montajı Ankara",Topical,https://enkaydogalgaz.com/hizmetler/kombi-bakim,Konuma özel sorgu
+"kaskat sistemleri uzmanı",Topical,https://enkaydogalgaz.com/hizmetler/kaskat-sistemleri,Niş keyword
+"ısıtma soğutma çözümleri Ankara",Topical,https://enkaydogalgaz.com/hizmetler,Topluca hizmet sayfası
+"ısınma verimliliği çözümleri",Partial,https://enkaydogalgaz.com/blog,Rehber içerik yönlendirme
+"profesyonel doğalgaz çözümleri",Partial,https://enkaydogalgaz.com/,Kurumsal sayfa
+"yetkili kombi bakım hizmeti",Partial,https://enkaydogalgaz.com/hizmetler/kombi-bakim,Yetki vurgusu
+"Ankara doğalgaz hizmeti",Exact,https://enkaydogalgaz.com/,Hedef anahtar
+"Ankara kombi montajı",Exact,https://enkaydogalgaz.com/hizmetler/kombi-bakim,Destekleyici exact match
+"detaylı bilgi al",Generic,https://enkaydogalgaz.com/iletisim,CTA odaklı
+"hemen keşfet",Generic,https://enkaydogalgaz.com/hizmetler,Hizmet listesi
+"teklif iste",Generic,https://enkaydogalgaz.com/iletisim,Form dönüşümü
+

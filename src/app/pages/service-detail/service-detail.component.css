@@ -1,0 +1,45 @@
+/* Service detail component styles */
+
+/* Sticky sidebar container - ENTIRE sidebar is sticky */
+.sidebar-sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 2rem;
+  align-self: flex-start;
+  height: fit-content;
+  max-height: calc(100vh - 4rem);
+  overflow-y: auto;
+  overflow-x: visible;
+  z-index: 50;
+  will-change: transform;
+}
+
+/* Ensure ALL parent containers allow sticky */
+section {
+  position: relative;
+  overflow: visible;
+}
+
+/* Grid container fix */
+.grid {
+  position: relative;
+  overflow: visible;
+  align-items: flex-start;
+}
+
+/* Main content container */
+.lg\:col-span-2 {
+  position: relative;
+  overflow: visible;
+}
+
+/* Max width container */
+.max-w-7xl {
+  position: relative;
+  overflow: visible;
+}
+
+/* Prevent sidebar from moving during scroll */
+.sidebar-sticky > div {
+  position: relative;
+}

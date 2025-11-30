@@ -1,0 +1,155 @@
+<!-- Hero Section -->
+<section class="bg-gradient-to-br from-primary to-primary/80 text-white py-20 relative overflow-hidden">
+  <div class="absolute inset-0 opacity-10">
+    <img src="/professional-team-technicians-working.jpg" alt="Background" class="w-full h-full object-cover" />
+  </div>
+  <div class="relative max-w-6xl mx-auto px-4">
+    <h1 class="text-4xl md:text-5xl font-bold mb-4 text-balance">En-Kay Doğalgaz & Tesisat</h1>
+    <p class="text-lg text-white/90 max-w-3xl">
+      Ankara'da 1998 yılından bu yana güvenilir doğalgaz, kombi, klima ve sıhhi tesisat hizmetleri sunan kurumsal işletme
+    </p>
+  </div>
+</section>
+
+<!-- Company Overview -->
+<section class="py-20 bg-white">
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <div class="relative h-96 rounded-lg overflow-hidden shadow-xl">
+        <img src="/commercial-center-gas-installation.jpg" alt="Kurumsal ofis" class="w-full h-full object-cover" />
+      </div>
+      <div>
+        <h2 class="text-4xl font-bold mb-8">Kurumsal Yapımız</h2>
+        <p class="text-lg text-muted-foreground mb-6 leading-relaxed">
+          En-Kay Doğalgaz & Tesisat, 1998 yılında kurulmuş olup Ankara'nın tüm bölgelerine profesyonel ve güvenli tesisatçılık hizmetleri
+          sunan yerleşik bir kuruluştur. Müşteri memnuniyeti, kaliteli işçilik ve uzun vadeli güven ilişkisini temel
+          değerlerimiz olarak benimsemekteyiz.
+        </p>
+        <p class="text-lg text-muted-foreground mb-6 leading-relaxed">
+          Deneyimli teknisyen kadromuz, modern teknoloji cihazlarımız ve ulusal standartlara uygun iş akışlarımız ile her
+          projeyi mühendislik titizliğiyle yürütmekteyiz. Şantiye disiplini, güvenlik protokolleri ve müşteri
+          iletişim kalitesi şirketimizin ayırt edici özellikleridir.
+        </p>
+        <p class="text-lg text-muted-foreground leading-relaxed">
+          7/24 acil destek sistemimiz sayesinde herhangi bir konfor sorunu yaşadığınızda Ankara'nın herhangi bir
+          noktasında aynı gün müdahale imkanı sağlamaktayız.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Stats Grid -->
+<section class="py-20 bg-muted/30">
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="flex justify-center">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 w-full max-w-4xl">
+        <div *ngFor="let stat of stats" class="bg-white border border-primary/20 rounded-xl p-8 text-center shadow-lg">
+          <div class="text-5xl font-bold text-primary mb-3">{{ stat.value }}</div>
+          <p class="font-semibold text-foreground mb-1">{{ stat.label }}</p>
+          <p class="text-sm text-muted-foreground">{{ stat.sublabel }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Core Values -->
+<section class="py-20 bg-white">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="text-4xl font-bold mb-16 text-center">Kurumsal Değerlerimiz</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div *ngFor="let value of values" class="bg-white border border-border rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all">
+        <div class="h-48 overflow-hidden">
+          <img [src]="value.image || '/placeholder.svg'" [alt]="value.title" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
+        </div>
+        <div class="p-6">
+          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-12 h-12 text-primary mb-4">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+          </svg>
+          <h3 class="text-xl font-bold mb-3">{{ value.title }}</h3>
+          <p class="text-muted-foreground leading-relaxed">{{ value.desc }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Expertise & Standards -->
+<section class="py-20 bg-muted/30">
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <div class="relative h-96 rounded-lg overflow-hidden shadow-xl">
+        <img src="/industrial-factory-hvac-system.jpg" alt="Sertifikasyon ve eğitim" class="w-full h-full object-cover" />
+      </div>
+      <div>
+        <h2 class="text-4xl font-bold mb-8">Uzmanlık Alanları</h2>
+        <ul class="space-y-4">
+          <li *ngFor="let item of expertise" class="flex items-start gap-4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-primary flex-shrink-0 mt-1">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+              <polyline points="22 4 12 14.01 9 11.01"></polyline>
+            </svg>
+            <span class="text-lg text-muted-foreground">{{ item }}</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Process & Standards -->
+<section class="py-20 bg-white">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="text-4xl font-bold mb-16 text-center">İş Süreci ve Standartlar</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div *ngFor="let item of process" class="bg-white rounded-xl p-8 border border-border shadow-lg hover:shadow-xl transition-all">
+        <h3 class="text-2xl font-bold mb-6 flex items-center gap-3">
+          <span class="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center font-bold text-lg">{{ item.num }}</span>
+          {{ item.title }}
+        </h3>
+        <p class="text-muted-foreground leading-relaxed">{{ item.desc }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Key Strengths -->
+<section class="py-20 bg-muted/30">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="text-4xl font-bold mb-16 text-center">Neden En-Kay'ı Seçmelisiniz?</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div *ngFor="let strength of strengths" class="flex gap-6 p-6 bg-white rounded-lg border border-border hover:border-primary/30 transition-colors shadow-lg">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8 text-primary flex-shrink-0">
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+        </svg>
+        <div>
+          <h3 class="font-bold text-lg mb-2">{{ strength.title }}</h3>
+          <p class="text-muted-foreground">{{ strength.desc }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section class="py-20 bg-gradient-to-r from-primary to-primary/80 text-white">
+  <div class="max-w-6xl mx-auto px-4 text-center">
+    <h2 class="text-4xl font-bold mb-6">Bize Ulaşın</h2>
+    <p class="text-xl text-white/90 mb-12 max-w-2xl mx-auto">
+      Ankara'nın her noktasından ücretsiz keşif ve aynı gün randevu için iletişime geçin.
+    </p>
+    <div class="flex flex-col sm:flex-row items-center justify-center gap-6">
+      <a href="tel:+905336417849" class="bg-white text-primary px-8 py-4 rounded-lg font-bold text-lg hover:bg-white/90 transition-colors">
+        📞 0533 641 7849
+      </a>
+      <a href="https://wa.me/905336417849" target="_blank" rel="noopener noreferrer" class="bg-green-600 text-white px-6 py-3 rounded-xl font-semibold text-base hover:bg-green-700 transition-colors flex items-center justify-center gap-2 shadow-md hover:shadow-lg">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span class="text-base">WhatsApp</span>
+      </a>
+    </div>
+  </div>
+</section>
+

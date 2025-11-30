@@ -1,0 +1,228 @@
+<!-- Hero Section with Image -->
+<section class="relative bg-gradient-to-br from-primary to-primary/80 text-white py-16 md:py-24 overflow-hidden">
+  <div class="absolute inset-0 opacity-10">
+    <img src="/professional-hvac-technician-working.jpg" alt="Background" class="w-full h-full object-cover" />
+  </div>
+  <div class="relative max-w-6xl mx-auto px-4">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      <div>
+        <h1 class="text-4xl md:text-5xl font-bold mb-6 text-balance">
+          Ankara Doğalgaz, Kombi, Klima ve Tesisat Servisi
+        </h1>
+        <p class="text-lg text-white/90 mb-8 text-balance">
+          Ankara'da doğalgaz tesisatı, kombi servisi, klima montaj, kaskat tesisatı ve sıhhi tesisat hizmetleri. 1998 yılından bu yana Ankara'nın
+          tüm bölgelerine güvenilir ve kaliteli tesisat hizmetleri vermekteyiz. 7/24 acil servis.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a
+            href="tel:+905336417849"
+            title="Hemen Arayın - 0533 641 7849"
+            aria-label="Telefon ile arayın: 0533 641 7849"
+            class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-white text-primary rounded-lg hover:bg-white/90 transition-colors font-semibold"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+            Hemen Arayın
+          </a>
+          <a
+            routerLink="/hizmetler"
+            title="Tüm hizmetlerimizi görüntüleyin"
+            aria-label="Hizmetler sayfasına git"
+            class="inline-flex items-center justify-center px-6 py-3 border-2 border-white text-white rounded-lg hover:bg-white/10 transition-colors font-semibold"
+          >
+            Hizmetleri Görün
+          </a>
+        </div>
+      </div>
+      <div class="relative h-96 bg-white/10 rounded-lg overflow-hidden shadow-2xl">
+          <img
+            src="/professional-technician-repair-service.jpg"
+            alt="Ankara doğalgaz tesisatı profesyonel teknisyen"
+            loading="lazy"
+            class="w-full h-full object-cover"
+          />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Why Choose Us -->
+<section class="py-16 bg-background">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center mb-12">Neden Bizi Seçmelisiniz?</h2>
+    <div class="flex justify-center">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-5xl">
+        <div *ngFor="let feature of features" class="bg-card rounded-lg border border-border overflow-hidden hover:shadow-lg transition-all">
+          <div class="relative h-48 overflow-hidden">
+            <img [src]="feature.image || '/placeholder.svg'" [alt]="feature.title + ' - En-Kay Doğalgaz'" loading="lazy" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
+          </div>
+          <div class="p-6 text-center">
+            <div class="inline-block p-4 bg-primary/10 rounded-lg mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-primary">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+            </div>
+            <h3 class="font-bold text-lg mb-2">{{ feature.title }}</h3>
+            <p class="text-muted-foreground">{{ feature.description }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Services Section with Images -->
+<section class="py-16">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center mb-12">Hizmetlerimiz</h2>
+    <div class="flex justify-center">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-5xl">
+        <a *ngFor="let service of services" [routerLink]="service.href" [title]="service.title + ' hizmet detayları'" [attr.aria-label]="service.title + ' hizmet sayfasına git'" class="block">
+          <div class="bg-card border border-border rounded-lg overflow-hidden hover:shadow-xl hover:border-primary transition-all cursor-pointer h-full flex flex-col">
+            <div class="relative h-48 bg-muted overflow-hidden">
+              <img
+                [src]="service.image || '/placeholder.svg'"
+                [alt]="service.title + ' - Ankara'"
+                loading="lazy"
+                class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+              />
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <div class="inline-block w-fit p-3 bg-primary/10 rounded-lg mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-primary">
+                  <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                </svg>
+              </div>
+              <h3 class="font-bold text-lg mb-2">{{ service.title }}</h3>
+              <p class="text-muted-foreground text-sm flex-grow">{{ service.description }}</p>
+              <div class="flex items-center gap-2 text-primary font-semibold mt-4">
+                Detaylı Bilgi
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Team/Trust Section -->
+<section class="py-16 bg-muted/30">
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      <div class="relative h-96 rounded-lg overflow-hidden shadow-lg">
+        <img src="/professional-team-technicians-working.jpg" alt="Ankara doğalgaz tesisatı profesyonel ekip" loading="lazy" class="w-full h-full object-cover" />
+      </div>
+      <div>
+        <h2 class="text-3xl font-bold mb-6">Uzman Teknisyenler Ekibimiz</h2>
+        <p class="text-lg text-muted-foreground mb-4 leading-relaxed">
+          27 yılı aşkın deneyime sahip, sertifikalı teknisyen kadromuz her projeyi mühendislik titizliğiyle yürütmektedir.
+          Müşteri memnuniyeti en yüksek önceliğimizdir.
+        </p>
+        <p class="text-lg text-muted-foreground mb-8 leading-relaxed">
+          Ankara'nın tüm bölgelerinde aktif hizmet veren ekibimiz, acil durumlarda hızlı müdahale için hazır bulunmaktadır.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Projects/Portfolio -->
+<section class="py-16">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center mb-12">Tamamlanan Projeler</h2>
+    <div class="flex justify-center">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-5xl">
+        <div *ngFor="let project of projects" class="group rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all">
+          <div class="relative h-64 overflow-hidden">
+            <img
+              [src]="project.image || '/placeholder.svg'"
+              [alt]="project.title + ' - En-Kay Doğalgaz projesi'"
+              loading="lazy"
+              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end">
+              <p class="text-white font-semibold p-4">{{ project.title }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Brands Section -->
+<section class="py-16 bg-white">
+  <div class="max-w-[1600px] mx-auto px-6">
+    <div class="text-center mb-12">
+      <div class="flex items-center justify-center gap-3 mb-4">
+        <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-primary">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+          </svg>
+        </div>
+        <h2 class="text-3xl font-bold text-foreground">Çalıştığımız Markalar</h2>
+      </div>
+      <p class="text-lg text-muted-foreground max-w-2xl mx-auto">
+        Türkiye'nin önde gelen kombi ve tesisat markaları ile çalışmaktayız. Tüm markalarda uzman servis hizmeti sunmaktayız.
+      </p>
+    </div>
+    <div class="flex justify-center">
+      <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-6 items-stretch w-full max-w-[1400px]">
+      <div *ngFor="let brand of brands" class="bg-white border border-border/50 rounded-xl p-6 md:p-7 hover:border-primary/50 hover:shadow-lg transition-all text-center group flex flex-col h-full">
+        <div class="flex items-center justify-center h-32 md:h-36 mb-4 flex-shrink-0">
+          <img 
+            [src]="brand.logo" 
+            [alt]="brand.name + ' Logo'" 
+            class="h-full w-full object-contain object-center p-4 opacity-80 group-hover:opacity-100 transition-opacity"
+            onerror="this.onerror=null; this.style.display='none'; this.nextElementSibling.style.display='block';"
+          />
+          <span class="text-sm font-bold text-foreground group-hover:text-primary transition-colors hidden">{{ brand.name }}</span>
+        </div>
+        <p class="text-sm md:text-base text-muted-foreground font-medium mt-auto break-words leading-tight px-2 min-h-[48px] flex items-center justify-center" [title]="brand.name">{{ brand.name }}</p>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section class="py-16 bg-gradient-to-r from-primary to-primary/80 text-white">
+  <div class="max-w-4xl mx-auto px-4 text-center">
+    <h2 class="text-3xl font-bold mb-4">Acil Hizmet Mi Gerekiyor?</h2>
+    <p class="text-lg text-white/90 mb-8">
+      7/24 acil destek için bize hemen ulaşın. Uzman teknisyenlerimiz en kısa sürede yanınızda olur.
+    </p>
+    <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+      <a
+        href="https://wa.me/905336417849"
+        target="_blank"
+        rel="noopener noreferrer"
+        title="WhatsApp ile acil servis için iletişime geçin"
+        aria-label="WhatsApp ile mesaj gönder"
+        class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-green-600 text-white rounded-xl hover:bg-green-700 transition-colors font-semibold shadow-md hover:shadow-lg"
+      >
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span class="text-base">WhatsApp</span>
+      </a>
+      <a
+        href="tel:+905336417849"
+        title="Acil servis için hemen arayın: 0533 641 7849"
+        aria-label="Telefon ile acil servis için arayın: 0533 641 7849"
+        class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-primary rounded-lg hover:bg-white/90 transition-colors font-semibold text-lg shadow-md hover:shadow-lg"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+        </svg>
+        0533 641 7849
+      </a>
+    </div>
+  </div>
+</section>
+
