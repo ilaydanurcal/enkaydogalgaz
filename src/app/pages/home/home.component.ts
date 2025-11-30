@@ -30,24 +30,24 @@ export class HomeComponent implements OnInit {
     this.title.setTitle('Ankara Doğalgaz, Kombi, Klima ve Tesisat Servisi | En-Kay Doğalgaz');
     this.meta.updateTag({ 
       name: 'description', 
-      content: 'Ankara\'da doğalgaz tesisatı, kombi servisi, klima montaj, kaskat tesisatı ve sıhhi tesisat hizmetleri. 1998\'den beri 27+ yıl deneyim. 7/24 acil servis. 0533 641 7849' 
+      content: 'Ankara\'da doğalgaz tesisatı, kombi montajı, klima montaj, kaskat sistemleri ve sıhhi tesisat hizmetleri. 1998\'den bu zamana kadar 27+ yıl deneyim. 7/24 acil servis. 0533 641 7849' 
     });
     this.meta.updateTag({ 
       name: 'keywords', 
-      content: 'Ankara doğalgaz, Ankara kombi servisi, Ankara klima, Ankara tesisat, doğalgaz tesisatı, kombi bakım, klima montaj, kaskat tesisatı, sıhhi tesisat, ısıtma soğutma, acil servis' 
+      content: 'Ankara doğalgaz, Ankara kombi montajı, Ankara klima, Ankara tesisat, doğalgaz tesisatı, kombi bakım, klima montaj, kaskat sistemleri, sıhhi tesisat, ısıtma soğutma, acil servis' 
     });
     this.meta.updateTag({ property: 'og:title', content: 'Ankara Doğalgaz, Kombi, Klima ve Tesisat Servisi | En-Kay Doğalgaz' });
-    this.meta.updateTag({ property: 'og:description', content: 'Ankara\'da doğalgaz tesisatı, kombi servisi, klima montaj, kaskat tesisatı ve sıhhi tesisat hizmetleri. 1998\'den beri 27+ yıl deneyim.' });
+    this.meta.updateTag({ property: 'og:description', content: 'Ankara\'da doğalgaz tesisatı, kombi montajı, klima montaj, kaskat sistemleri ve sıhhi tesisat hizmetleri. 1998\'den bu zamana kadar 27+ yıl deneyim.' });
   }
   services: Service[] = [
     {
-      title: "Kombi Servisi",
+      title: "Kombi Montajı",
       description: "Kombi kurulum, bakım ve onarım hizmetleri. Acil arızalarınız için 7/24 destek.",
       href: "/hizmetler/kombi",
       image: "/modern-boiler-installation-technician.jpg",
     },
     {
-      title: "Kaskat Tesisatı",
+      title: "Kaskat Sistemleri",
       description: "Kaskat montajı, bakım ve tamiri. Su sızıntısı sorunlarını çözmede uzman.",
       href: "/hizmetler/kaskat",
       image: "/water-tank-installation-professional.jpg",
@@ -81,7 +81,7 @@ export class HomeComponent implements OnInit {
   features: Feature[] = [
     {
       title: "27+ Yıl Deneyim",
-      description: "1998'den beri Ankara'da güvenilir ve profesyonel hizmet",
+      description: "1998'den bu zamana kadar Ankara'da güvenilir ve profesyonel hizmet",
       image: "/do-algaz-tesisat--hizmet-teknisyeni.jpg",
     },
     {

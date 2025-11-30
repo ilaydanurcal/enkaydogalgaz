@@ -24,7 +24,7 @@ export class DistrictDetailComponent implements OnInit {
       name: 'Çankaya',
       fullName: 'Ankara Çankaya İlçesi',
       population: '850.000+',
-      description: 'Ankara\'nın merkezi ilçesi Çankaya\'da 1998\'den beri 27+ yıl deneyimimiz ile hizmet veriyoruz.',
+      description: 'Ankara\'nın merkezi ilçesi Çankaya\'da 1998\'den bu zamana kadar 27+ yıl deneyimimiz ile hizmet veriyoruz.',
     },
     mamak: {
       name: 'Mamak',

@@ -16,7 +16,7 @@ export class ServiceDetailComponent implements OnInit {
 
   serviceDetails: any = {
     kombi: {
-      title: 'Kombi Servisi',
+      title: 'Kombi Montajı',
       subtitle: 'Profesyonel Kombi Kurulum, Bakım ve Onarım Hizmetleri',
       description: 'Kombi sistemlerinizin optimum performansla çalışması için uzman teknik ekibimizle profesyonel hizmetler sunuyoruz. Yeni kurulum, periyodik bakım ve acil onarım hizmetlerimizde güvenilir ve kaliteli çözümler sağlıyoruz.',
       fullDescription: 'Kombi sistemleri, konutların ısıtılması ve sıcak su ihtiyaçlarının karşılanması açısından kritik altyapı bileşenleridir. En güncel teknolojiye sahip kombi modellerinden geleneksel sistemlere kadar geniş bir yelpazede hizmet vermekteyiz. 1998 yılından bu yana 27 yılı aşkın deneyimimiz ve sertifikalı teknisyen kadromuzla, her türlü kombi problemine hızlı, etkili ve güvenilir çözümler üretmekteyiz.',
@@ -37,7 +37,7 @@ export class ServiceDetailComponent implements OnInit {
       ],
     },
     kaskat: {
-      title: 'Kaskat Tesisatı',
+      title: 'Kaskat Sistemleri',
       subtitle: 'Su Deposu ve Kaskat Sistemleri Kurulum Hizmetleri',
       description: 'Konutların su ihtiyaçlarını karşılayan kaskat sistemlerinin profesyonel kurulum, bakım ve onarım hizmetlerinde uzman ekibimizle hizmet vermekteyiz.',
       fullDescription: 'Kaskat sistemleri, konutlarda su depolanması ve dağıtılması için gerekli kritik altyapı bileşenleridir. Su sızıntıları, basınç problemleri ve kuraklık durumlarında kaskat sistemleri hayati önem taşımaktadır. Ankara\'nın tüm bölgelerinde, modern teknoloji ve kaliteli malzemeler kullanarak kaskat sistemlerine yönelik kapsamlı çözümler sunmaktayız.',
@@ -88,7 +88,7 @@ export class ServiceDetailComponent implements OnInit {
       title: 'Doğalgaz Tesisatı',
       subtitle: 'Sertifikalı ve Güvenli Doğalgaz Kurulum Hizmetleri',
       description: 'Sertifikalı ve güvenli doğalgaz tesisatı kurulum, bakım ve onarım hizmetlerinde uzman ekibimizle hizmet vermekteyiz.',
-      fullDescription: 'Doğalgaz sistemleri, güvenlik açısından en yüksek dikkat gerektiren kritik altyapı sistemleridir. Tüm işlemlerimiz resmi standartlara uygun olarak gerçekleştirilmekte ve İGDAŞ sertifikasyon süreçlerine tabi tutulmaktadır. Ankara\'da 1998 yılından bu yana güvenli, kaliteli ve sertifikalı doğalgaz tesisatı hizmetleri sunmaktayız.',
+      fullDescription: 'Doğalgaz sistemleri, güvenlik açısından en yüksek dikkat gerektiren kritik altyapı sistemleridir. Tüm işlemlerimiz resmi standartlara uygun olarak gerçekleştirilmekte ve Başkent Doğalgaz sertifikasyon süreçlerine tabi tutulmaktadır. Ankara\'da 1998 yılından bu yana güvenli, kaliteli ve sertifikalı doğalgaz tesisatı hizmetleri sunmaktayız.',
       image: '/natural-gas-installation-certified.jpg',
       services: [
         'Yeni Doğalgaz Tesisatı',
@@ -163,16 +163,16 @@ export class ServiceDetailComponent implements OnInit {
 
   updateSEO() {
     const serviceKeywords: { [key: string]: string } = {
-      kombi: 'kombi servisi, kombi bakım, kombi montaj, kombi onarım, Ankara kombi, kombi kurulum',
-      kaskat: 'kaskat tesisatı, kaskat montaj, kaskat bakım, su deposu, kaskat onarım, Ankara kaskat',
+      kombi: 'kombi montajı, kombi bakım, kombi montaj, kombi onarım, Ankara kombi, kombi kurulum',
+      kaskat: 'kaskat sistemleri, kaskat montaj, kaskat bakım, su deposu, kaskat onarım, Ankara kaskat',
       klima: 'klima servisi, klima montaj, klima bakım, klima onarım, Ankara klima, klima kurulum, split klima',
       'sihhi-tesisat': 'sıhhi tesisat, su tesisatı, banyo tesisatı, mutfak tesisatı, tesisat onarım, Ankara tesisat',
-      dogalgaz: 'doğalgaz tesisatı, doğalgaz montaj, doğalgaz kurulum, İGDAŞ, doğalgaz açımı, Ankara doğalgaz',
+      dogalgaz: 'doğalgaz tesisatı, doğalgaz montaj, doğalgaz kurulum, Başkent Doğalgaz, doğalgaz açımı, Ankara doğalgaz',
       'kazan-dairesi': 'kazan dairesi, kazan kurulum, kazan bakım, merkezi ısıtma, kazan onarım, Ankara kazan'
     };
 
     const title = `${this.service.title} - Ankara | En-Kay Doğalgaz & Tesisat`;
-    const description = `${this.service.subtitle}. Ankara'da 1998'den beri 27+ yıl deneyim. Profesyonel ve güvenilir hizmet. 7/24 acil servis. 0533 641 7849`;
+    const description = `${this.service.subtitle}. Ankara'da 1998'den bu zamana kadar 27+ yıl deneyim. Profesyonel ve güvenilir hizmet. 7/24 acil servis. 0533 641 7849`;
     const keywords = serviceKeywords[this.slug] || 'Ankara tesisat, profesyonel hizmet';
 
     this.title.setTitle(title);

@@ -12,13 +12,13 @@ import { RouterModule } from '@angular/router';
 export class ServicesComponent {
   services = [
     {
-      title: 'Kombi Servisi',
+      title: 'Kombi Montajı',
       slug: 'kombi',
       description: 'Kombi kurulum, bakım ve onarım hizmetleri. Acil arızalarınız için 7/24 destek.',
       features: ['Kombi Kurulum', 'Periyodik Bakım', 'Acil Arıza Servisi', 'Kombi Temizliği'],
     },
     {
-      title: 'Kaskat Tesisatı',
+      title: 'Kaskat Sistemleri',
       slug: 'kaskat',
       description: 'Kaskat montajı, bakım ve tamiri. Su sızıntısı sorunlarını çözmede uzman.',
       features: ['Kaskat Montajı', 'Bakım ve Onarım', 'Su Kaçağı Tespiti', 'Alternatif Çözümler'],

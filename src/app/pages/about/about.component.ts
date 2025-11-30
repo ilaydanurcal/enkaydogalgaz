@@ -17,17 +17,17 @@ export class AboutComponent implements OnInit {
     this.title.setTitle('Hakkımızda - En-Kay Doğalgaz & Tesisat | Ankara 1998\'den Beri');
     this.meta.updateTag({ 
       name: 'description', 
-      content: 'En-Kay Doğalgaz & Tesisat, 1998\'den beri Ankara\'da doğalgaz, kombi, klima ve tesisat hizmetleri sunan güvenilir kurumsal işletme. 27+ yıl deneyim, sertifikalı teknisyenler, 7/24 acil destek.' 
+      content: 'En-Kay Doğalgaz & Tesisat, 1998\'den bu zamana kadar Ankara\'da doğalgaz, kombi, klima ve tesisat hizmetleri sunan güvenilir kurumsal işletme. 27+ yıl deneyim, sertifikalı teknisyenler, 7/24 acil destek.' 
     });
     this.meta.updateTag({ 
       name: 'keywords', 
-      content: 'En-Kay Doğalgaz, Ankara tesisat firması, doğalgaz tesisatı Ankara, kombi servisi Ankara, klima servisi Ankara, 1998 kuruluş, 27 yıl deneyim' 
+      content: 'En-Kay Doğalgaz, Ankara tesisat firması, doğalgaz tesisatı Ankara, kombi montajı Ankara, klima servisi Ankara, 1998 kuruluş, 27 yıl deneyim' 
     });
     this.meta.updateTag({ property: 'og:title', content: 'Hakkımızda - En-Kay Doğalgaz & Tesisat | Ankara 1998\'den Beri' });
-    this.meta.updateTag({ property: 'og:description', content: '1998\'den beri Ankara\'da doğalgaz, kombi, klima ve tesisat hizmetleri. 27+ yıl deneyim, sertifikalı teknisyenler.' });
+    this.meta.updateTag({ property: 'og:description', content: '1998\'den bu zamana kadar Ankara\'da doğalgaz, kombi, klima ve tesisat hizmetleri. 27+ yıl deneyim, sertifikalı teknisyenler.' });
   }
   stats = [
-    { value: '27+', label: 'Yıl Deneyim', sublabel: '1998\'den beri' },
+    { value: '27+', label: 'Yıl Deneyim', sublabel: '1998\'den bu zamana kadar' },
     { value: '11', label: 'Ankara İlçesi', sublabel: '7/24 hizmet' },
     { value: '6 Ay', label: 'Garanti', sublabel: 'İşçilik ve parça' },
   ];
@@ -35,7 +35,7 @@ export class AboutComponent implements OnInit {
   values = [
     {
       title: 'Güvenlik ve Sertifikasyon',
-      desc: 'Tüm projelerimiz kanunen yetkilendirilmiş şekilde, İGDAŞ, Ankara Su ve Kanalizasyon kurumlarının tüm şartlarına uygun olarak yapılır.',
+      desc: 'Tüm projelerimiz kanunen yetkilendirilmiş şekilde, Başkent Doğalgaz, Ankara Su ve Kanalizasyon kurumlarının tüm şartlarına uygun olarak yapılır.',
       image: '/natural-gas-installation-certified.jpg',
     },
     {
@@ -68,10 +68,10 @@ export class AboutComponent implements OnInit {
   ];
 
   strengths = [
-    { title: 'Belgeli ve Sertifikalı', desc: 'İGDAŞ, Ankara Su ve Kanalizasyon Kurumu onaylı çalışmalar' },
+    { title: 'Belgeli ve Sertifikalı', desc: 'Başkent Doğalgaz, Ankara Su ve Kanalizasyon Kurumu onaylı çalışmalar' },
     { title: 'Hızlı Müdahale', desc: 'Aynı gün randevu ve 7/24 acil destek sistemi' },
     { title: 'Tam Garanti', desc: '6 ay işçilik ve yedek parça garantisi' },
-    { title: 'Deneyimli Ekip', desc: '27+ yıllık proje tecrübesi (1998\'den beri)' },
+    { title: 'Deneyimli Ekip', desc: '27+ yıllık proje tecrübesi (1998\'den bu zamana kadar)' },
     { title: 'Verimlilik Fokusü', desc: 'Enerji tasarrufu ve maliyet minimizasyonu' },
     { title: 'Şeffaf Fiyatlandırma', desc: 'Keşif sonrası net fiyat, gizli ücret yok' },
   ];
