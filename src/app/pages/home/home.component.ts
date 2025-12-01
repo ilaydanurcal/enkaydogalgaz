@@ -27,17 +27,17 @@ export class HomeComponent implements OnInit {
   constructor(private title: Title, private meta: Meta) {}
 
   ngOnInit() {
-    this.title.setTitle('Ankara Doğalgaz, Kombi, Klima ve Tesisat Servisi | En-Kay Doğalgaz');
+    this.title.setTitle('En-Kay Doğalgaz - Ankara İçinde Doğalgaz ve Klima Servisi | 1998\'den Bu Zamana');
     this.meta.updateTag({ 
       name: 'description', 
-      content: 'Ankara\'da doğalgaz tesisatı, kombi montajı, klima montaj, kaskat sistemleri ve sıhhi tesisat hizmetleri. 1998\'den bu zamana kadar 27+ yıl deneyim. 7/24 acil servis. 0533 641 7849' 
+      content: 'En-Kay Doğalgaz: Ankara içinde doğalgaz ve klima hizmetleri. 1998\'den bu zamana kadar 27+ yıl deneyim. Doğalgaz tesisatı, kombi montajı, merkezi klima sistemi (VRF), kaskat sistemleri. 7/24 acil servis. 0533 641 7849' 
     });
     this.meta.updateTag({ 
       name: 'keywords', 
-      content: 'Ankara doğalgaz, Ankara kombi montajı, Ankara klima, Ankara tesisat, doğalgaz tesisatı, kombi bakım, klima montaj, kaskat sistemleri, sıhhi tesisat, ısıtma soğutma, acil servis' 
+      content: 'enkay doğalgaz, ankara içinde doğalgaz, ankara içinde klima, ankara doğalgaz, ankara klima, doğalgaz tesisatı, kombi montajı, merkezi klima sistemi, VRF klima, kaskat sistemleri, Ankara tesisat, Ankara kombi, Ankara klima servisi, doğalgaz montaj, klima montaj, 7/24 acil servis' 
     });
-    this.meta.updateTag({ property: 'og:title', content: 'Ankara Doğalgaz, Kombi, Klima ve Tesisat Servisi | En-Kay Doğalgaz' });
-    this.meta.updateTag({ property: 'og:description', content: 'Ankara\'da doğalgaz tesisatı, kombi montajı, klima montaj, kaskat sistemleri ve sıhhi tesisat hizmetleri. 1998\'den bu zamana kadar 27+ yıl deneyim.' });
+    this.meta.updateTag({ property: 'og:title', content: 'En-Kay Doğalgaz - Ankara İçinde Doğalgaz ve Klima Servisi | 1998\'den Bu Zamana' });
+    this.meta.updateTag({ property: 'og:description', content: 'En-Kay Doğalgaz: Ankara içinde doğalgaz ve klima hizmetleri. 1998\'den bu zamana kadar 27+ yıl deneyim. Doğalgaz tesisatı, kombi montajı, merkezi klima sistemi (VRF). 7/24 acil servis.' });
   }
   services: Service[] = [
     {
@@ -53,8 +53,8 @@ export class HomeComponent implements OnInit {
       image: "/water-tank-installation-professional.jpg",
     },
     {
-      title: "Klima Servisi",
-      description: "Klima kurulum, temizliği ve onarımı. Soğutma ve ısıtma sistemleri.",
+      title: "Merkezi klima sistemi(VRF)",
+      description: "Merkezi klima sistemleri kurulum, temizliği ve onarımı. VRF sistemleri ile soğutma ve ısıtma.",
       href: "/hizmetler/klima",
       image: "/air-conditioning-installation.jpg",
     },

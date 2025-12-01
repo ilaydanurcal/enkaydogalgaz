@@ -18,9 +18,9 @@ export class JsonLdComponent implements OnInit {
       const schema = {
         '@context': 'https://schema.org',
         '@type': 'LocalBusiness',
-        name: 'En-Kay Doğalgaz & Tesisat',
-        description: 'Ankara\'da 1998\'den bu zamana kadar doğalgaz tesisatı, kombi montajı, kaskat sistemleri, klima montaj ve sıhhi tesisat hizmetleri. 27+ yıl deneyim. 7/24 acil servis.',
-        url: 'https://enkay.com',
+        name: 'En-Kay Doğalgaz',
+        description: 'En-Kay Doğalgaz: Ankara içinde doğalgaz ve klima hizmetleri. 1998\'den bu zamana kadar 27+ yıl deneyim. Doğalgaz tesisatı, kombi montajı, merkezi klima sistemi (VRF), kaskat sistemleri. 7/24 acil servis.',
+        url: 'https://enkaydogalgaz.com',
         telephone: '+905336417849',
         email: 'enkaydogalgaz@gmail.com',
         foundingDate: '1998',

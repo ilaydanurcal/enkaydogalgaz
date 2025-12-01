@@ -24,9 +24,9 @@ export class ServicesComponent {
       features: ['Kaskat Montajı', 'Bakım ve Onarım', 'Su Kaçağı Tespiti', 'Alternatif Çözümler'],
     },
     {
-      title: 'Klima Servisi',
+      title: 'Merkezi klima sistemi(VRF)',
       slug: 'klima',
-      description: 'Klima kurulum, temizliği ve onarımı. Soğutma ve ısıtma sistemleri.',
+      description: 'Merkezi klima sistemleri kurulum, temizliği ve onarımı. VRF sistemleri ile soğutma ve ısıtma.',
       features: ['Klima Kurulum', 'Temizlik ve Bakım', 'Onarım Hizmetleri', 'Enerji Verimliliği'],
     },
     {

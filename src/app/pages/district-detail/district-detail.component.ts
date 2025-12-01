@@ -86,7 +86,7 @@ export class DistrictDetailComponent implements OnInit {
     'Doğalgaz Tesisatı',
     'Kombi Kurulum ve Bakımı',
     'Kaskat Montajı',
-    'Klima Servisi',
+    'Merkezi klima sistemi(VRF)',
     'Sıhhi Tesisatı',
     'Kazan Dairesi',
     'Acil Arıza Servisi',

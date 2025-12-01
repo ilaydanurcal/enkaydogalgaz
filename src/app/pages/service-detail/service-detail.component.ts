@@ -53,10 +53,10 @@ export class ServiceDetailComponent implements OnInit {
       benefits: ['Su kütlesinde optimum denge sağlama', 'Kesintisiz ve güvenilir su tedariki', 'Acil durumlar için güvenilir kaynak', 'Uzun vadede ekonomik çözümler'],
     },
     klima: {
-      title: 'Klima Servisi',
+      title: 'Merkezi klima sistemi(VRF)',
       subtitle: 'Soğutma ve Isıtma Sistemleri Kurulum ve Bakım Hizmetleri',
-      description: 'Modern klima sistemlerinin profesyonel kurulum, periyodik bakım ve onarım hizmetlerinde uzman ekibimizle hizmet vermekteyiz.',
-      fullDescription: 'Klima sistemleri, yaşam kalitesini artıran ve konutların konforunu sağlayan kritik sistemlerdir. Yaz aylarında soğutma, kış aylarında ısıtma ihtiyaçlarını karşılarken, enerji verimliliği ve çevre dostu çözümler önceliğimizdir. En güncel teknoloji ve kanıtlanmış onarım yöntemlerini kullanarak, müşterilerimize en yüksek kalitede hizmet sunmaktayız.',
+      description: 'Merkezi klima sistemlerinin profesyonel kurulum, periyodik bakım ve onarım hizmetlerinde uzman ekibimizle hizmet vermekteyiz.',
+      fullDescription: 'Merkezi klima sistemleri, diğer bir adıyla VRF klima sistemleri içeride bulunan akışkan debiyi değiştirerek ihtiyaç duyulan kapasiteyi belirleyebilen klima sistemleridir. Çevre dostu R-410A soğutucu akışkan ve akıllı inverter teknolojisine sahiptirler.',
       image: '/air-conditioning-installation.jpg',
       services: [
         'Klima Kurulum ve Montajı',
