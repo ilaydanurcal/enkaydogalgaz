@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
+import { Title, Meta } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-services',
@@ -9,7 +10,22 @@ import { RouterModule } from '@angular/router';
   templateUrl: './services.component.html',
   styleUrls: ['./services.component.css']
 })
-export class ServicesComponent {
+export class ServicesComponent implements OnInit {
+  constructor(private title: Title, private meta: Meta) {}
+
+  ngOnInit() {
+    this.title.setTitle('Ankara Tesisat Hizmetleri - Doğalgaz, Kombi, Klima | En-Kay Doğalgaz');
+    this.meta.updateTag({ 
+      name: 'description', 
+      content: 'Ankara tesisat hizmetleri: Ankara doğalgaz tesisatı, Ankara kombi montajı, Ankara merkezi klima sistemi (VRF), Ankara kaskat sistemleri, Ankara sıhhi tesisat, Ankara kazan dairesi. 7/24 acil servis. 0533 641 7849' 
+    });
+    this.meta.updateTag({ 
+      name: 'keywords', 
+      content: 'Ankara tesisat, ankara tesisat hizmetleri, ankara doğalgaz tesisatı, ankara kombi montajı, ankara klima servisi, ankara sıhhi tesisat, ankara kaskat sistemleri, ankara kazan dairesi, ankara tesisat onarım, ankara tesisat kurulum, ankara tesisat bakım, ankara tesisat servisi, ankara acil tesisat, ankara tesisat firması, ankara tesisat şirketi' 
+    });
+    this.meta.updateTag({ property: 'og:title', content: 'Ankara Tesisat Hizmetleri - Doğalgaz, Kombi, Klima | En-Kay Doğalgaz' });
+    this.meta.updateTag({ property: 'og:description', content: 'Ankara tesisat hizmetleri: Ankara doğalgaz tesisatı, Ankara kombi montajı, Ankara merkezi klima sistemi (VRF), Ankara kaskat sistemleri. 7/24 acil servis.' });
+  }
   services = [
     {
       title: 'Kombi Montajı',

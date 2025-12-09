@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, ActivatedRoute } from '@angular/router';
+import { Title, Meta } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-district-detail',
@@ -92,13 +93,34 @@ export class DistrictDetailComponent implements OnInit {
     'Acil Arıza Servisi',
   ];
 
-  constructor(private route: ActivatedRoute) {}
+  constructor(
+    private route: ActivatedRoute,
+    private title: Title,
+    private meta: Meta
+  ) {}
 
   ngOnInit() {
     this.route.params.subscribe(params => {
       this.slug = params['slug'];
       this.district = this.districtInfo[this.slug as keyof typeof this.districtInfo];
+      
+      if (this.district) {
+        this.updateSEO();
+      }
     });
+  }
+
+  updateSEO() {
+    const districtName = this.district.name;
+    const title = `${districtName} Tesisat - ${districtName} Doğalgaz, Kombi, Klima | En-Kay Doğalgaz`;
+    const description = `${districtName} ilçesinde doğalgaz tesisatı, kombi montajı, merkezi klima sistemi (VRF), kaskat sistemleri ve sıhhi tesisat hizmetleri. Ankara ${districtName} tesisat servisi. 7/24 acil servis. 0533 641 7849`;
+    const keywords = `${districtName.toLowerCase()} tesisat, ${districtName.toLowerCase()} doğalgaz, ${districtName.toLowerCase()} kombi, ${districtName.toLowerCase()} klima, ${districtName.toLowerCase()} tesisat servisi, ${districtName.toLowerCase()} tesisat firması, ${districtName.toLowerCase()} doğalgaz tesisatı, ${districtName.toLowerCase()} kombi montajı, ${districtName.toLowerCase()} klima servisi, ankara ${districtName.toLowerCase()} tesisat, ${districtName.toLowerCase()} acil tesisat, ${districtName.toLowerCase()} tesisat onarım`;
+
+    this.title.setTitle(title);
+    this.meta.updateTag({ name: 'description', content: description });
+    this.meta.updateTag({ name: 'keywords', content: keywords });
+    this.meta.updateTag({ property: 'og:title', content: title });
+    this.meta.updateTag({ property: 'og:description', content: description });
   }
 }
 

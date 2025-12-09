@@ -21,7 +21,7 @@ export class ContactComponent implements OnInit {
     });
     this.meta.updateTag({ 
       name: 'keywords', 
-      content: 'Ankara doğalgaz telefon, Ankara kombi montajı telefon, Ankara klima servisi, acil tesisat servisi Ankara, 7/24 tesisat, doğalgaz acil servis' 
+      content: 'Ankara tesisat telefon, ankara doğalgaz telefon, ankara kombi telefon, ankara klima telefon, ankara tesisat servisi telefon, ankara acil tesisat telefon, ankara tesisat iletişim, ankara doğalgaz iletişim, ankara kombi iletişim, ankara klima iletişim, ankara tesisat randevu, ankara tesisat keşif, 7/24 tesisat ankara, acil tesisat servisi ankara, ankara tesisat adres' 
     });
     this.meta.updateTag({ property: 'og:title', content: 'İletişim - En-Kay Doğalgaz & Tesisat | Ankara 7/24 Acil Servis' });
     this.meta.updateTag({ property: 'og:description', content: 'Ankara\'da doğalgaz, kombi, klima ve tesisat hizmetleri için bize ulaşın. 7/24 acil servis. 0533 641 7849' });

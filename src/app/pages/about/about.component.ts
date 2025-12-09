@@ -21,7 +21,7 @@ export class AboutComponent implements OnInit {
     });
     this.meta.updateTag({ 
       name: 'keywords', 
-      content: 'En-Kay Doğalgaz, Ankara tesisat firması, doğalgaz tesisatı Ankara, kombi montajı Ankara, klima servisi Ankara, 1998 kuruluş, 27 yıl deneyim' 
+      content: 'Ankara tesisat, Ankara tesisat firması, Ankara tesisatçı, ankara doğalgaz tesisatı, ankara kombi montajı, ankara klima servisi, ankara sıhhi tesisat, ankara kaskat sistemleri, ankara kazan dairesi, ankara tesisat onarım, ankara tesisat kurulum, ankara tesisat bakım, ankara acil tesisat, ankara tesisat servisi, En-Kay Doğalgaz, 1998 kuruluş, 27 yıl deneyim, ankara tesisat şirketi' 
     });
     this.meta.updateTag({ property: 'og:title', content: 'Hakkımızda - En-Kay Doğalgaz & Tesisat | Ankara 1998\'den Beri' });
     this.meta.updateTag({ property: 'og:description', content: '1998\'den bu zamana kadar Ankara\'da doğalgaz, kombi, klima ve tesisat hizmetleri. 27+ yıl deneyim, sertifikalı teknisyenler.' });

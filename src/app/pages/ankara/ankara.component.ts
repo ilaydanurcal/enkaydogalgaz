@@ -21,7 +21,7 @@ export class AnkaraComponent implements OnInit {
     });
     this.meta.updateTag({ 
       name: 'keywords', 
-      content: 'Ankara doğalgaz, Keçiören kombi montajı, Çankaya klima, Mamak tesisat, Altındağ doğalgaz, Yenimahalle kombi, Ankara ilçeleri tesisat, 7/24 acil servis Ankara' 
+      content: 'Ankara tesisat, ankara ilçeleri tesisat, ankara bölgeleri tesisat, keçiören tesisat, çankaya tesisat, mamak tesisat, altındağ tesisat, yenimahalle tesisat, ankara merkez tesisat, eryaman tesisat, polatlı tesisat, sincan tesisat, pursaklar tesisat, ankara doğalgaz, ankara kombi, ankara klima, ankara tesisat servisi, ankara tesisat firması, 7/24 acil servis ankara' 
     });
     this.meta.updateTag({ property: 'og:title', content: 'Ankara İlçelerinde Doğalgaz, Kombi, Klima Servisi | En-Kay Doğalgaz' });
     this.meta.updateTag({ property: 'og:description', content: 'Ankara\'nın tüm ilçelerinde doğalgaz, kombi, klima ve tesisat hizmetleri. 7/24 acil servis.' });

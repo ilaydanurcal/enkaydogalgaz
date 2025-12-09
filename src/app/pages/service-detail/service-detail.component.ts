@@ -163,15 +163,15 @@ export class ServiceDetailComponent implements OnInit {
 
   updateSEO() {
     const serviceKeywords: { [key: string]: string } = {
-      kombi: 'kombi montajı, kombi bakım, kombi montaj, kombi onarım, Ankara kombi, kombi kurulum',
-      kaskat: 'kaskat sistemleri, kaskat montaj, kaskat bakım, su deposu, kaskat onarım, Ankara kaskat',
-      klima: 'klima servisi, klima montaj, klima bakım, klima onarım, Ankara klima, klima kurulum, split klima',
-      'sihhi-tesisat': 'sıhhi tesisat, su tesisatı, banyo tesisatı, mutfak tesisatı, tesisat onarım, Ankara tesisat',
-      dogalgaz: 'doğalgaz tesisatı, doğalgaz montaj, doğalgaz kurulum, Başkent Doğalgaz, doğalgaz açımı, Ankara doğalgaz',
-      'kazan-dairesi': 'kazan dairesi, kazan kurulum, kazan bakım, merkezi ısıtma, kazan onarım, Ankara kazan'
+      kombi: 'Ankara kombi, ankara kombi servisi, ankara kombi montajı, ankara kombi bakım, ankara kombi onarım, kombi montajı, kombi bakım, kombi onarım, kombi kurulum',
+      kaskat: 'Ankara kaskat, ankara kaskat sistemleri, ankara kaskat montaj, ankara kaskat bakım, ankara su deposu, kaskat sistemleri, kaskat montaj, kaskat bakım, kaskat onarım',
+      klima: 'Ankara klima, ankara klima servisi, ankara klima montajı, ankara merkezi klima, ankara VRF klima, ankara klima bakım, ankara klima onarım, klima servisi, klima montaj, klima bakım',
+      'sihhi-tesisat': 'Ankara tesisat, ankara sıhhi tesisat, ankara su tesisatı, ankara banyo tesisatı, ankara mutfak tesisatı, ankara tesisat onarım, sıhhi tesisat, su tesisatı, tesisat onarım',
+      dogalgaz: 'Ankara doğalgaz, ankara doğalgaz servisi, ankara doğalgaz tesisatı, ankara doğalgaz montaj, ankara doğalgaz kurulum, Başkent Doğalgaz, ankara doğalgaz açımı, doğalgaz tesisatı, doğalgaz montaj',
+      'kazan-dairesi': 'Ankara kazan, ankara kazan dairesi, ankara kazan kurulum, ankara kazan bakım, ankara merkezi ısıtma, ankara kazan onarım, kazan dairesi, kazan kurulum, kazan bakım'
     };
 
-    const title = `${this.service.title} - Ankara | En-Kay Doğalgaz & Tesisat`;
+    const title = `Ankara ${this.service.title} - ${this.service.title} Ankara | En-Kay Doğalgaz`;
     const description = `${this.service.subtitle}. Ankara'da 1998'den bu zamana kadar 27+ yıl deneyim. Profesyonel ve güvenilir hizmet. 7/24 acil servis. 0533 641 7849`;
     const keywords = serviceKeywords[this.slug] || 'Ankara tesisat, profesyonel hizmet';
 

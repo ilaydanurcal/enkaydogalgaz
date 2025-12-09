@@ -27,17 +27,17 @@ export class HomeComponent implements OnInit {
   constructor(private title: Title, private meta: Meta) {}
 
   ngOnInit() {
-    this.title.setTitle('En-Kay Doğalgaz - Ankara İçinde Doğalgaz ve Klima Servisi | 1998\'den Bu Zamana');
+    this.title.setTitle('Ankara Doğalgaz - Ankara Kombi - Ankara Klima | En-Kay Doğalgaz 1998\'den Bu Zamana');
     this.meta.updateTag({ 
       name: 'description', 
-      content: 'En-Kay Doğalgaz: Ankara içinde doğalgaz ve klima hizmetleri. 1998\'den bu zamana kadar 27+ yıl deneyim. Doğalgaz tesisatı, kombi montajı, merkezi klima sistemi (VRF), kaskat sistemleri. 7/24 acil servis. 0533 641 7849' 
+      content: 'Ankara doğalgaz, Ankara kombi, Ankara klima hizmetleri. En-Kay Doğalgaz: Ankara\'da 1998\'den bu zamana kadar 27+ yıl deneyim. Ankara doğalgaz tesisatı, Ankara kombi montajı, Ankara merkezi klima sistemi (VRF), Ankara kaskat sistemleri. Ankara\'nın tüm ilçelerinde 7/24 acil servis. 0533 641 7849' 
     });
     this.meta.updateTag({ 
       name: 'keywords', 
-      content: 'enkay doğalgaz, ankara içinde doğalgaz, ankara içinde klima, ankara doğalgaz, ankara klima, doğalgaz tesisatı, kombi montajı, merkezi klima sistemi, VRF klima, kaskat sistemleri, Ankara tesisat, Ankara kombi, Ankara klima servisi, doğalgaz montaj, klima montaj, 7/24 acil servis' 
+      content: 'ankara doğalgaz, ankara kombi, ankara klima, ankara tesisat, ankara doğalgaz servisi, ankara kombi servisi, ankara klima servisi, ankara doğalgaz tesisatı, ankara kombi montajı, ankara klima montajı, ankara merkezi klima, ankara VRF klima, ankara kaskat sistemleri, enkay doğalgaz, ankara içinde doğalgaz, ankara içinde klima, ankara içinde kombi, 7/24 acil servis ankara' 
     });
-    this.meta.updateTag({ property: 'og:title', content: 'En-Kay Doğalgaz - Ankara İçinde Doğalgaz ve Klima Servisi | 1998\'den Bu Zamana' });
-    this.meta.updateTag({ property: 'og:description', content: 'En-Kay Doğalgaz: Ankara içinde doğalgaz ve klima hizmetleri. 1998\'den bu zamana kadar 27+ yıl deneyim. Doğalgaz tesisatı, kombi montajı, merkezi klima sistemi (VRF). 7/24 acil servis.' });
+    this.meta.updateTag({ property: 'og:title', content: 'Ankara Doğalgaz - Ankara Kombi - Ankara Klima | En-Kay Doğalgaz' });
+    this.meta.updateTag({ property: 'og:description', content: 'Ankara doğalgaz, Ankara kombi, Ankara klima hizmetleri. Ankara\'da 1998\'den bu zamana kadar 27+ yıl deneyim. Ankara doğalgaz tesisatı, Ankara kombi montajı, Ankara merkezi klima sistemi (VRF). 7/24 acil servis.' });
   }
   services: Service[] = [
     {
