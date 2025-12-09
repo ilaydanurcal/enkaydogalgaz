@@ -1,0 +1,48 @@
+# Nginx yapılandırma dosyası örneği
+# Bu dosyayı nginx sites-available klasörüne kopyalayın ve düzenleyin
+
+server {
+    listen 80;
+    server_name enkaydogalgaz.com www.enkaydogalgaz.com;
+    
+    root /var/www/enkaydogalgaz/dist/enkay-dogalgaz/browser;
+    index index.html;
+
+    # Sitemap.xml için özel location
+    location = /sitemap.xml {
+        add_header Content-Type "text/xml; charset=utf-8";
+        add_header Cache-Control "public, max-age=3600";
+        try_files $uri =404;
+    }
+
+    # Robots.txt için özel location
+    location = /robots.txt {
+        add_header Content-Type "text/plain; charset=utf-8";
+        add_header Cache-Control "public, max-age=3600";
+        try_files $uri =404;
+    }
+
+    # Statik dosyalar (resimler, CSS, JS vb.)
+    location ~* \.(jpg|jpeg|png|gif|svg|ico|css|js|woff|woff2|ttf|eot)$ {
+        expires 1y;
+        add_header Cache-Control "public, immutable";
+        try_files $uri =404;
+    }
+
+    # Angular SPA için - tüm diğer istekleri index.html'e yönlendir
+    location / {
+        try_files $uri $uri/ /index.html;
+    }
+
+    # Gzip compression
+    gzip on;
+    gzip_vary on;
+    gzip_min_length 1024;
+    gzip_types text/plain text/css text/xml text/javascript application/javascript application/json application/xml;
+
+    # Security headers
+    add_header X-Frame-Options "SAMEORIGIN" always;
+    add_header X-Content-Type-Options "nosniff" always;
+    add_header X-XSS-Protection "1; mode=block" always;
+}
+
